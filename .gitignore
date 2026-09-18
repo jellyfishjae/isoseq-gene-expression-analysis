@@ -1,0 +1,22 @@
+# Private research data
+data/raw/
+Gene_expression.tsv
+clinical_info.csv
+
+# Analysis outputs
+results/
+figures/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
