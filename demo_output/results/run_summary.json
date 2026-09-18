@@ -1,0 +1,47 @@
+{
+  "inputs": {
+    "expression_file": "Gene_expression.tsv",
+    "clinical_file": "clinical_info.csv"
+  },
+  "parameters": {
+    "min_tpm": 1.0,
+    "min_sample_fraction": 0.2,
+    "top_variable_genes": 300,
+    "pca_components": 10,
+    "permutations": 199,
+    "random_state": 42,
+    "synthetic": true
+  },
+  "dataset": {
+    "samples": 16,
+    "input_genes": 600,
+    "expression_filtered_genes": 600,
+    "pca_genes": 300,
+    "group_counts": {
+      "ADNC": 4,
+      "ADNC+LBD": 4,
+      "LBD": 4,
+      "Control (PART)": 4
+    }
+  },
+  "gene_tests": {
+    "tested": 300,
+    "bh_q_below_0_05": 0
+  },
+  "data_kind": "synthetic",
+  "pathology_group_permutation_test": {
+    "pseudo_f": 2.3202190090991546,
+    "r_squared": 0.36711053932763393,
+    "p_value": 0.005,
+    "permutations": 199,
+    "n_samples": 16,
+    "n_groups": 4
+  },
+  "group_candidate_batch_diagnostic": {
+    "chi2": 0.0,
+    "p_value": 1.0,
+    "cramers_v": 0.0,
+    "small_expected_counts": true
+  },
+  "privacy": "Source sample identifiers and row-level clinical data were not exported."
+}
